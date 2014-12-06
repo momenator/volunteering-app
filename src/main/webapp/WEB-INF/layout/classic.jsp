@@ -19,10 +19,20 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
+		<div style="width:100%;height:100px;background-color:#ccc;margin-top:0px;position:fixed">
+			<div style="width:30%;height:70px;margin-left:20%;margin-top:30px">
+				<h1>volunteer.me</h1>
+			</div>
+			
+			<a style="float:right;margin-top:-70px;margin-right:20%;" href="#" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
+			
+		</div>
+		
 	
 		<tiles:insertAttribute name="body" />
-		<center>
-			<tiles:insertAttribute name="footer" /> 
-		</center>
+
+
+		<tiles:insertAttribute name="footer" /> 
+
 	</body>
 </html>
