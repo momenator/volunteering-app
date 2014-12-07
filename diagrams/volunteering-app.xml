@@ -13,7 +13,7 @@
 	<entity>
 		<entity-name>se.group6.vfa.entity.Organisation</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>168</entity-height>
+		<entity-height>206</entity-height>
 		<entity-X-Coordinate>520</entity-X-Coordinate>
 		<entity-Y-Coordinate>390</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>

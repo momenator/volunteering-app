@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 @Entity
 public class User {
@@ -31,7 +32,7 @@ public class User {
 	@JoinTable
 	private List<Role> roles;
 
-	@ManyToMany
+	@OneToMany
 	@JoinTable
 	private List<VW> VW_applied;
 
