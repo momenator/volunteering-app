@@ -47,11 +47,19 @@ public class InitDBService {
 
 		User userAdmin = new User();
 		userAdmin.setName("admin");
+
+		User user2 = new User();
+		user2.setName("Muhammad Rafdi");
+
 		List<Role> roles = new ArrayList<Role>();
 		roles.add(roleAdmin);
 		roles.add(roleUser);
 		userAdmin.setRoles(roles);
 		userRepository.save(userAdmin);
+
+		List<Role> roles2 = new ArrayList<Role>();
+		roles2.add(roleUser);
+		userAdmin.setRoles(roles2);
 
 		Organisation google = new Organisation();
 		google.setOrganisation_name("Google");
@@ -65,12 +73,14 @@ public class InitDBService {
 		vw1.setOrganisation(google);
 		vw1.setName("Code Club Volunteer");
 		vw1.setDate_posted(new Date());
+
 		vwRepository.save(vw1);
 
 		VW vw2 = new VW();
 		vw2.setOrganisation(google);
 		vw2.setName("University Volunteer");
 		vw2.setDate_posted(new Date());
+
 		vwRepository.save(vw2);
 
 		VW vw3 = new VW();
@@ -84,5 +94,15 @@ public class InitDBService {
 		vw4.setName("Events Usher Volunteer");
 		vw4.setDate_posted(new Date());
 		vwRepository.save(vw4);
+
+		List<VW> vw_applied = new ArrayList<VW>();
+		vw_applied.add(vw1);
+		vw_applied.add(vw2);
+		vw_applied.add(vw3);
+		user2.setVW_applied(vw_applied);
+		user2.setDescription("A Passionate Computer Science Student at UCL");
+		user2.setDOB(new Date(1993, 04, 24));
+		userRepository.save(user2);
+
 	}
 }
