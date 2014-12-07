@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import se.group6.vfa.entity.User;
+import se.group6.vfa.entity.VW;
 import se.group6.vfa.repository.UserRepository;
 
 @Service
@@ -19,7 +20,17 @@ public class UserService {
 	}
 
 	public User findOne(int id) {
-		// TODO Auto-generated method stub
 		return userRepository.findOne(id);
+	}
+
+	public User findOneWithVW(int id) {
+		User user = findOne(id);
+		return null;
+	}
+
+	public List<VW> findUserVW(int id) {
+		User user = findOne(id);
+
+		return user.getVW_applied();
 	}
 }
