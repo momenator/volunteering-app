@@ -37,7 +37,7 @@
 		<property name="dataSource" ref="dataSource" />
 		
 	</bean>
-	
 	<jpa:repositories base-package="se.group6.vfa.repository" />
+	
 	
 </beans>
