@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 @Entity
@@ -27,7 +28,12 @@ public class User {
 	private String sex;
 
 	@ManyToMany
+	@JoinTable
 	private List<Role> roles;
+
+	@ManyToMany
+	@JoinTable
+	private List<VW> VW_applied;
 
 	public String getDescription() {
 		return description;
