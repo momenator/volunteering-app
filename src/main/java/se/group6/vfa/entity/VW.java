@@ -1,11 +1,13 @@
 package se.group6.vfa.entity;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -13,10 +15,17 @@ public class VW {
 	@Id
 	@GeneratedValue
 	private Integer Id;
+
 	private String name;
+
 	private Date date_posted;
+
 	private String job_description;
+
 	private String company;
+
+	@ManyToMany(mappedBy = "VW_applied")
+	private List<User> users;
 
 	public String getName() {
 		return name;

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><entities>
 	<entity>
-		<entity-name>se.group6.vfa.entity.VW</entity-name>
+		<entity-name>se.group6.vfa.entity.Organisation</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>186</entity-height>
-		<entity-X-Coordinate>340</entity-X-Coordinate>
-		<entity-Y-Coordinate>70</entity-Y-Coordinate>
+		<entity-height>206</entity-height>
+		<entity-X-Coordinate>650</entity-X-Coordinate>
+		<entity-Y-Coordinate>66</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
 	</entity>
 
 	<entity>
-		<entity-name>se.group6.vfa.entity.Organisation</entity-name>
+		<entity-name>se.group6.vfa.entity.VW</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>206</entity-height>
-		<entity-X-Coordinate>650</entity-X-Coordinate>
-		<entity-Y-Coordinate>66</entity-Y-Coordinate>
+		<entity-height>226</entity-height>
+		<entity-X-Coordinate>340</entity-X-Coordinate>
+		<entity-Y-Coordinate>70</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -35,7 +35,7 @@
 	<entity>
 		<entity-name>se.group6.vfa.entity.User</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>246</entity-height>
+		<entity-height>266</entity-height>
 		<entity-X-Coordinate>70</entity-X-Coordinate>
 		<entity-Y-Coordinate>70</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>

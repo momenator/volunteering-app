@@ -31,6 +31,10 @@ public class User {
 	@JoinTable
 	private List<Role> roles;
 
+	@ManyToMany
+	@JoinTable
+	private List<VW> VW_applied;
+
 	public String getDescription() {
 		return description;
 	}
@@ -93,6 +97,14 @@ public class User {
 
 	public void setRoles(List<Role> roles) {
 		this.roles = roles;
+	}
+
+	public List<VW> getVW_applied() {
+		return VW_applied;
+	}
+
+	public void setVW_applied(List<VW> vW_applied) {
+		VW_applied = vW_applied;
 	}
 
 }
