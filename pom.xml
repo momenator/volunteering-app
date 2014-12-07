@@ -12,6 +12,24 @@
   
   <dependencies>
   	<dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-jpa</artifactId>
+        <version>1.7.1.RELEASE</version>
+    </dependency>
+  	
+  	<dependency>
+  		<groupId>org.hsqldb</groupId>
+  		<artifactId>hsqldb</artifactId>
+  		<version>2.3.2</version>
+  	</dependency>
+  
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-entitymanager</artifactId>
+  		<version>4.3.7.Final</version>
+  	</dependency>
+
+  	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>javax.servlet-api</artifactId>
   		<version>3.1.0</version>
@@ -32,7 +50,7 @@
   	<dependency>
   		<groupId>org.slf4j</groupId>
   		<artifactId>slf4j-log4j12</artifactId>
-  		<version>1.5.8</version>
+  		<version>1.7.7</version>
   	</dependency>
 
   	<dependency>
