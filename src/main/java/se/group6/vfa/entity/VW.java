@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -18,6 +19,7 @@ public class VW {
 	private Integer organisation_id;
 
 	@ManyToOne
+	@JoinColumn(name = "organisation_id")
 	private Organisation organisation;
 
 	public Integer getId() {
