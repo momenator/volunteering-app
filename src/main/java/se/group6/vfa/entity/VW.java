@@ -13,9 +13,18 @@ public class VW {
 	@Id
 	@GeneratedValue
 	private Integer Id;
+	private String name;
 	private Date date_posted;
 	private String job_description;
 	private String company;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	@ManyToOne
 	@JoinColumn(name = "organisation_id")
