@@ -17,4 +17,9 @@ public class UserService {
 	public List<User> findAll() {
 		return userRepository.findAll();
 	}
+
+	public User findOne(int id) {
+		// TODO Auto-generated method stub
+		return userRepository.findOne(id);
+	}
 }

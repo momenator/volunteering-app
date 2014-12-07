@@ -14,7 +14,12 @@
    
    <definition name="users" extends="common">
      <put-attribute name="title" value="Users" />
-     <put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+     <put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />     
+   </definition>
+   
+    <definition name="user-detail" extends="common">
+     <put-attribute name="title" value="User detail" />
+     <put-attribute name="body" value="/WEB-INF/jsp/user-detail.jsp" />     
    </definition>
   
 </tiles-definitions>
