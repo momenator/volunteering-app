@@ -16,7 +16,6 @@ public class VW {
 	private Date date_posted;
 	private String job_description;
 	private String company;
-	private Integer organisation_id;
 
 	@ManyToOne
 	@JoinColumn(name = "organisation_id")
@@ -54,12 +53,12 @@ public class VW {
 		this.company = company;
 	}
 
-	public Integer getOrganisation_id() {
-		return organisation_id;
+	public Organisation getOrganisation() {
+		return organisation;
 	}
 
-	public void setOrganisation_id(Integer organisation_id) {
-		this.organisation_id = organisation_id;
+	public void setOrganisation(Organisation organisation) {
+		this.organisation = organisation;
 	}
 
 }

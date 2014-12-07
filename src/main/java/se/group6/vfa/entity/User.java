@@ -31,10 +31,6 @@ public class User {
 	@JoinTable
 	private List<Role> roles;
 
-	@ManyToMany
-	@JoinTable
-	private List<VW> VW_applied;
-
 	public String getDescription() {
 		return description;
 	}

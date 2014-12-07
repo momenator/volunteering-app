@@ -5,7 +5,6 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -22,8 +21,7 @@ public class Organisation {
 
 	private String address;
 
-	@OneToMany
-	@JoinTable
+	@OneToMany(mappedBy = "organisation")
 	private List<VW> VW_available;
 
 	public Integer getOrganisation_id() {
@@ -64,6 +62,14 @@ public class Organisation {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public List<VW> getVW_available() {
+		return VW_available;
+	}
+
+	public void setVW_available(List<VW> vW_available) {
+		VW_available = vW_available;
 	}
 
 }
