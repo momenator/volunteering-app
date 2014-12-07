@@ -50,6 +50,8 @@ public class InitDBService {
 		List<Role> roles = new ArrayList<Role>();
 		roles.add(roleAdmin);
 		roles.add(roleUser);
+		userAdmin.setRoles(roles);
+		userRepository.save(userAdmin);
 
 		Organisation google = new Organisation();
 		google.setOrganisation_name("Google");
