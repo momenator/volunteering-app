@@ -4,5 +4,6 @@
 		<class>se.group6.vfa.entity.User</class>
 		<class>se.group6.vfa.entity.Role</class>
 		<class>se.group6.vfa.entity.VW</class>
+		<class>se.group6.vfa.entity.Organisation</class>
 	</persistence-unit>
 </persistence>
