@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class VW {
@@ -15,6 +16,9 @@ public class VW {
 	private String job_description;
 	private String company;
 	private Integer organisation_id;
+
+	@ManyToOne
+	private Organisation organisation;
 
 	public Integer getId() {
 		return Id;
