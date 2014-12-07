@@ -1,22 +1,33 @@
 package se.group6.vfa.entity;
 
-import java.sql.Date;
+import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class User {
 	@Id
 	@GeneratedValue
 	private Integer Id;
+
 	private String name;
+
 	private String email;
+
 	private String password;
+
 	private String description;
+
 	private Date DOB;
+
 	private String sex;
+
+	@ManyToMany
+	private List<Role> roles;
 
 	public String getDescription() {
 		return description;
