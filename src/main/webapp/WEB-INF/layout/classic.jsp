@@ -24,10 +24,10 @@
 		
 		<div style="width:100%;height:100px;background-color:#ccc;margin-top:0px;position:fixed">
 			<div style="width:30%;height:70px;margin-left:20%;margin-top:30px">
-				<h1>volunteer.me</h1>
+				<h1><a href="/">volunteer.me</a></h1>
 			</div>
 			
-			<a style="float:right;margin-top:-70px;margin-right:20%;" href="#" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
+			<a style="float:right;margin-top:-70px;margin-right:20%;" href="/register.html" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
 			
 		</div>
 		
