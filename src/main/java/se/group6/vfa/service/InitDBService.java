@@ -14,6 +14,7 @@ import se.group6.vfa.entity.Organisation;
 import se.group6.vfa.entity.Role;
 import se.group6.vfa.entity.User;
 import se.group6.vfa.entity.VW;
+import se.group6.vfa.entity.VW_Application;
 import se.group6.vfa.repository.OrganisationRepository;
 import se.group6.vfa.repository.RoleRepository;
 import se.group6.vfa.repository.UserRepository;
@@ -59,7 +60,7 @@ public class InitDBService {
 
 		List<Role> roles2 = new ArrayList<Role>();
 		roles2.add(roleUser);
-		userAdmin.setRoles(roles2);
+		user2.setRoles(roles2);
 
 		Organisation google = new Organisation();
 		google.setOrganisation_name("Google");
@@ -73,14 +74,12 @@ public class InitDBService {
 		vw1.setOrganisation(google);
 		vw1.setName("Code Club Volunteer");
 		vw1.setDate_posted(new Date());
-
 		vwRepository.save(vw1);
 
 		VW vw2 = new VW();
 		vw2.setOrganisation(google);
 		vw2.setName("University Volunteer");
 		vw2.setDate_posted(new Date());
-
 		vwRepository.save(vw2);
 
 		VW vw3 = new VW();
@@ -99,9 +98,12 @@ public class InitDBService {
 		vw_applied.add(vw1);
 		vw_applied.add(vw2);
 		vw_applied.add(vw3);
-		user2.setVW_applied(vw_applied);
+
+		VW_Application application_user2 = new VW_Application();
+		application_user2.setVw_applied(vw_applied);
+		user2.setVw_application(application_user2);
 		user2.setDescription("A Passionate Computer Science Student at UCL");
-		user2.setDOB(new Date(1993, 04, 24));
+		user2.setDOB(new Date(93, 03, 24));
 		userRepository.save(user2);
 
 	}

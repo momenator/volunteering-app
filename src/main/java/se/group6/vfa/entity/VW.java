@@ -22,6 +22,9 @@ public class VW {
 
 	private String company;
 
+	@ManyToOne
+	private VW_Application vw_application;
+
 	public String getName() {
 		return name;
 	}
@@ -72,6 +75,14 @@ public class VW {
 
 	public void setOrganisation(Organisation organisation) {
 		this.organisation = organisation;
+	}
+
+	public VW_Application getVw_application() {
+		return vw_application;
+	}
+
+	public void setVw_application(VW_Application vw_application) {
+		this.vw_application = vw_application;
 	}
 
 }

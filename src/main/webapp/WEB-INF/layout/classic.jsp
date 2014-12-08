@@ -31,7 +31,6 @@
 			
 		</div>
 		
-	
 		<tiles:insertAttribute name="body" />
 
 

@@ -6,14 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import se.group6.vfa.entity.User;
-import se.group6.vfa.entity.VW;
 import se.group6.vfa.repository.UserRepository;
+import se.group6.vfa.repository.VWRepository;
+import se.group6.vfa.repository.VW_ApplicationRepository;
 
 @Service
 public class UserService {
 
 	@Autowired
 	private UserRepository userRepository;
+
+	@Autowired
+	private VW_ApplicationRepository vw_ApplicationRepository;
 
 	@Autowired
 	private VWRepository vwRepository;
@@ -26,13 +30,4 @@ public class UserService {
 		return userRepository.findOne(id);
 	}
 
-	public User findOneWithVW(int id) {
-		User user = findOne(id);
-		List<VW> vw_applied = user.getVW_applied();
-		for (VW vw : vw_applied) {
-			List<VW> vw_items = vw
-		}
-		user.setVW_applied(vw_applied);
-		return user;
-	}
 }
