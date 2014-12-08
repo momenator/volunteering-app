@@ -10,6 +10,7 @@
            
            <http>
 			  <intercept-url pattern="/users**" access="ROLE_ADMIN" />
+			  <intercept-url pattern="/users/**" access="ROLE_ADMIN" />
 			  <form-login />
 			  <logout />
 		   </http>
