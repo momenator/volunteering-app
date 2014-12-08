@@ -39,5 +39,5 @@
 	</bean>
 	
 	<jpa:repositories base-package="se.group6.vfa.repository" entity-manager-factory-ref="emf" transaction-manager-ref="transactionManager" />
-	
+	<import resource="security.xml"/>
 </beans>
