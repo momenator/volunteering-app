@@ -3,7 +3,10 @@
 	<%@ include file="../layout/taglib.jsp" %>
 	
 	<div style="position:absolute;top:25%;left:20%;width:60%;z-index:-1;margin-bottom:50px">
-	
+		<c:if test="${ param.success eq true }">
+			<div class="alert alert-success">Registration Successful</div>
+			 
+		</c:if>
 		<form:form commandName="user" cssClass="form-horizontal">
 			<div class="form-group">
 				<label for="name" class="col-sm-2 control-label">Name : </label>
@@ -23,6 +26,7 @@
 			      <form:password path="password" cssClass="form-control" />
 			    </div>
 			</div>
+			
 			<div class="form-group">
 				<div class="col-sm-2">
 					<input type="submit" value="Register" class="btn btn-lg btn-primary" />
@@ -31,5 +35,4 @@
 			</div>
 			
 		</form:form>
-	
 	</div>

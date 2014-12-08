@@ -51,4 +51,8 @@
 		<input type="password" name="j_password" class="form-control" placeholder="Password" required> 
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
+      <br>
+      <p style="text-align:center">
+      	Not yet registered? <a href="/register.html">register here</a>
+      </p>
     

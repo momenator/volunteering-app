@@ -27,7 +27,7 @@
 				<h1><a href="/">volunteer.me</a></h1>
 			</div>
 			
-			<a style="float:right;margin-top:-70px;margin-right:20%;" href="/register.html" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
+			<a style="float:right;margin-top:-70px;margin-right:20%;" href="/login.html" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
 			
 		</div>
 		
