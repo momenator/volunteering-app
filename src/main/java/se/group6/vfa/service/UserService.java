@@ -15,6 +15,9 @@ public class UserService {
 	@Autowired
 	private UserRepository userRepository;
 
+	@Autowired
+	private VWRepository vwRepository;
+
 	public List<User> findAll() {
 		return userRepository.findAll();
 	}
@@ -25,12 +28,11 @@ public class UserService {
 
 	public User findOneWithVW(int id) {
 		User user = findOne(id);
-		return null;
-	}
-
-	public List<VW> findUserVW(int id) {
-		User user = findOne(id);
-
-		return user.getVW_applied();
+		List<VW> vw_applied = user.getVW_applied();
+		for (VW vw : vw_applied) {
+			List<VW> vw_items = vw
+		}
+		user.setVW_applied(vw_applied);
+		return user;
 	}
 }
