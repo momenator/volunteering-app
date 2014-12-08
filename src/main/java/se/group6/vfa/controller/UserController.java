@@ -1,5 +1,7 @@
 package se.group6.vfa.controller;
 
+import java.security.Principal;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -44,4 +46,12 @@ public class UserController {
 		userService.save(user);
 		return "redirect:/register.html?success=true";
 	}
+
+	@RequestMapping("/profile")
+	public String account(Model model, Principal principal) {
+		String name = principal.getName();
+		model.addAttribute("user", userService.findOneByName(name));
+		return "user-detail";
+	}
+
 }

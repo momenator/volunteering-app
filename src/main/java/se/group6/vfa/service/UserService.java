@@ -44,4 +44,9 @@ public class UserService {
 
 	}
 
+	public Object findOneByName(String name) {
+		User user = userRepository.findByName(name);
+		return findOne(user.getId());
+	}
+
 }

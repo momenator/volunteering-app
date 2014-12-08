@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
     
    	<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+   	<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
    	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -26,8 +27,13 @@
 			<div style="width:30%;height:70px;margin-left:20%;margin-top:30px">
 				<h1><a href="/">volunteer.me</a></h1>
 			</div>
-			
-			<a style="float:right;margin-top:-70px;margin-right:20%;" href="/login.html" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
+			<security:authorize access="! isAuthenticated()">
+				<a style="float:right;margin-top:-70px;margin-right:20%;" href="/login.html" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
+			</security:authorize>
+			<security:authorize access="isAuthenticated()">
+				<a style="float:right;margin-top:-70px;margin-right:20%;" href="/logout" class="btn btn-primary btn-lg" role="button">Logout</a>
+			</security:authorize>
+						
 			
 		</div>
 		
