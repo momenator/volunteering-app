@@ -31,6 +31,7 @@
 				<a style="float:right;margin-top:-70px;margin-right:20%;" href="/login.html" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
 			</security:authorize>
 			<security:authorize access="isAuthenticated()">
+				<a style="float:right;margin-top:-70px;margin-right:30%;" href="/profile.html" class="btn btn-primary btn-lg" role="button">My Profile</a>
 				<a style="float:right;margin-top:-70px;margin-right:20%;" href="/logout" class="btn btn-primary btn-lg" role="button">Logout</a>
 			</security:authorize>
 						
