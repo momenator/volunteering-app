@@ -1,11 +1,13 @@
 package se.group6.vfa.entity;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -22,8 +24,8 @@ public class VW {
 
 	private String company;
 
-	@ManyToOne
-	private VW_Application vw_application;
+	@ManyToMany(mappedBy = "vw_applied")
+	private List<User> users;
 
 	public String getName() {
 		return name;
@@ -77,12 +79,12 @@ public class VW {
 		this.organisation = organisation;
 	}
 
-	public VW_Application getVw_application() {
-		return vw_application;
+	public List<User> getUsers() {
+		return users;
 	}
 
-	public void setVw_application(VW_Application vw_application) {
-		this.vw_application = vw_application;
+	public void setUsers(List<User> users) {
+		this.users = users;
 	}
 
 }

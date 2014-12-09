@@ -10,7 +10,7 @@
     		<br>
     		DOB: ${user.DOB}
     	</p>
-    	<c:forEach items="${user.vw_application.vw_applied}" var="vw">
+    	<c:forEach items="${user.vw_applied}" var="vw">
     		<h3>${vw.name}</h3>
     		<p>${vw.organisation.organisation_name}</p>
     		<table class="table table-bordered">

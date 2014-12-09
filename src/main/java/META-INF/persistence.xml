@@ -5,6 +5,5 @@
 		<class>se.group6.vfa.entity.Role</class>
 		<class>se.group6.vfa.entity.VW</class>
 		<class>se.group6.vfa.entity.Organisation</class>
-		<class>se.group6.vfa.entity.VW_Application</class>
 	</persistence-unit>
 </persistence>

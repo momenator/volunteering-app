@@ -3,13 +3,11 @@ package se.group6.vfa.entity;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
 
 @Entity
 public class User {
@@ -43,8 +41,9 @@ public class User {
 	@JoinTable
 	private List<Role> roles;
 
-	@OneToOne(cascade = CascadeType.ALL)
-	private VW_Application vw_application;
+	@ManyToMany
+	@JoinTable
+	private List<VW> vw_applied;
 
 	public String getDescription() {
 		return description;
@@ -110,12 +109,12 @@ public class User {
 		this.roles = roles;
 	}
 
-	public VW_Application getVw_application() {
-		return vw_application;
+	public List<VW> getVw_applied() {
+		return vw_applied;
 	}
 
-	public void setVw_application(VW_Application vw_application) {
-		this.vw_application = vw_application;
+	public void setVw_applied(List<VW> vw_applied) {
+		this.vw_applied = vw_applied;
 	}
 
 }

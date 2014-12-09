@@ -15,7 +15,6 @@ import se.group6.vfa.entity.Organisation;
 import se.group6.vfa.entity.Role;
 import se.group6.vfa.entity.User;
 import se.group6.vfa.entity.VW;
-import se.group6.vfa.entity.VW_Application;
 import se.group6.vfa.repository.OrganisationRepository;
 import se.group6.vfa.repository.RoleRepository;
 import se.group6.vfa.repository.UserRepository;
@@ -103,9 +102,7 @@ public class InitDBService {
 		vw_applied.add(vw2);
 		vw_applied.add(vw3);
 
-		VW_Application application_user2 = new VW_Application();
-		application_user2.setVw_applied(vw_applied);
-		user2.setVw_application(application_user2);
+		user2.setVw_applied(vw_applied);
 		user2.setDescription("A Passionate Computer Science Student at UCL");
 		user2.setDOB(new Date(93, 03, 24));
 		userRepository.save(user2);

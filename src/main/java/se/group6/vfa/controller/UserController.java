@@ -20,7 +20,7 @@ public class UserController {
 	private UserService userService;
 
 	@ModelAttribute("user")
-	public User construct() {
+	public User constructUser() {
 		return new User();
 	}
 
@@ -53,5 +53,4 @@ public class UserController {
 		model.addAttribute("user", userService.findOneByName(name));
 		return "user-detail";
 	}
-
 }
