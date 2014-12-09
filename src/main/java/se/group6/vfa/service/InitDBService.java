@@ -74,26 +74,30 @@ public class InitDBService {
 		organisationRepository.save(unicef);
 
 		VW vw1 = new VW();
-		vw1.setOrganisation(google);
+		vw1.setOrganiser_name("Google");
 		vw1.setName("Code Club Volunteer");
+		vw1.setJob_description("Volunteering is generally considered an altruistic activity and is intended to promote goodness or improve human quality of life.");
 		vw1.setDate_posted(new Date());
 		vwRepository.save(vw1);
 
 		VW vw2 = new VW();
-		vw2.setOrganisation(google);
+		vw2.setOrganiser_name("Google");
 		vw2.setName("University Volunteer");
+		vw2.setJob_description("Volunteering is generally considered an altruistic activity and is intended to promote goodness or improve human quality of life. ");
 		vw2.setDate_posted(new Date());
 		vwRepository.save(vw2);
 
 		VW vw3 = new VW();
-		vw3.setOrganisation(unicef);
+		vw3.setOrganiser_name("UNICEF");
 		vw3.setName("Human Rights Volunteer");
+		vw3.setJob_description("Volunteering is generally considered an altruistic activity and is intended to promote goodness or improve human quality of life. ");
 		vw3.setDate_posted(new Date());
 		vwRepository.save(vw3);
 
 		VW vw4 = new VW();
-		vw4.setOrganisation(unicef);
+		vw4.setOrganiser_name("WHO");
 		vw4.setName("Events Usher Volunteer");
+		vw4.setJob_description("Volunteering is generally considered an altruistic activity and is intended to promote goodness or improve human quality of life.");
 		vw4.setDate_posted(new Date());
 		vwRepository.save(vw4);
 

@@ -1,6 +1,8 @@
 package se.group6.vfa.controller;
 
 import java.security.Principal;
+import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import se.group6.vfa.entity.User;
+import se.group6.vfa.entity.VW;
 import se.group6.vfa.service.UserService;
 import se.group6.vfa.service.VWService;
 
@@ -26,6 +29,11 @@ public class UserController {
 	@ModelAttribute("user")
 	public User constructUser() {
 		return new User();
+	}
+
+	@ModelAttribute("vw")
+	public VW constructVW() {
+		return new VW();
 	}
 
 	@RequestMapping("/users")
@@ -49,6 +57,19 @@ public class UserController {
 	public String registerUser(@ModelAttribute("user") User user) {
 		userService.save(user);
 		return "redirect:/register.html?success=true";
+	}
+
+	@RequestMapping(value = "/profile", method = RequestMethod.POST)
+	public String addVWtoUser(@ModelAttribute("vw") VW vw, Principal principal) {
+		vw.setDate_posted(new Date());
+		String name = principal.getName();
+		User user = userService.findOneByNameReturnUser(name);
+		List<VW> vw_applied = user.getVw_applied();
+		vwService.save(vw);
+		vw_applied.add(vw);
+		user.setVw_applied(vw_applied);
+		userService.save(user);
+		return "redirect:/profile.html";
 	}
 
 	@RequestMapping("/profile")

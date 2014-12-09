@@ -22,7 +22,7 @@ public class VW {
 
 	private String job_description;
 
-	private String company;
+	private String organiser_name;
 
 	@ManyToMany(mappedBy = "vw_applied")
 	private List<User> users;
@@ -63,12 +63,12 @@ public class VW {
 		this.job_description = job_description;
 	}
 
-	public String getCompany() {
-		return company;
+	public String getOrganiser_name() {
+		return organiser_name;
 	}
 
-	public void setCompany(String company) {
-		this.company = company;
+	public void setOrganiser_name(String organiser_name) {
+		this.organiser_name = organiser_name;
 	}
 
 	public Organisation getOrganisation() {

@@ -19,6 +19,12 @@
 				        <h4 class="modal-title" id="myModalLabel">Add New Volunteer Work</h4>
 				      </div>
 				      <div class="modal-body">
+				      	<div class="form-group">
+							<label for="organiser_name" class="col-sm-2 control-label">Organiser : </label>
+							<div class="col-sm-10">
+						      <form:input path="organiser_name" cssClass="form-control" />
+						    </div>
+						</div>
 				        <div class="form-group">
 							<label for="name" class="col-sm-2 control-label">Role : </label>
 							<div class="col-sm-10">
@@ -43,7 +49,7 @@
 			</security:authorize>
     	<c:forEach items="${vws}" var="vol_work">
     		<h3>${vol_work.name}</h3>
-    		<p>${vol_work.organisation.organisation_name}</p>
+    		<p>${vol_work.organiser_name}</p>
     		<table class="table table-bordered">
     			<thead>
     				<tr>

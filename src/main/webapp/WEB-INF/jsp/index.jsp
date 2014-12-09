@@ -14,7 +14,7 @@
 		    <input type="text" class="form-control" placeholder="Search Volunteering..." style="width:350px;height:40px">
 		  </div>
 		  <br>
-		  <button type="submit" class="btn btn-primary btn-lg" style="float:right;margin-top:20px;height:40px;width:100px">Go</button>
+		  <button type="submit" class="btn btn-primary btn-lg" style="float:right;margin-top:20px;height:40px;width:100px"><a style=" color:#fff" href="/vws.html">Go</a></button>
 		</form> 
 	</div>
 	<div style="position:absolute;top:26%;right:20%">
