@@ -26,13 +26,13 @@
 			      <form:password path="password" cssClass="form-control" />
 			    </div>
 			</div>
-			
-			<div class="form-group">
-				<div class="col-sm-2">
-					<input type="submit" value="Register" class="btn btn-lg btn-primary" />
+			<center>
+				<div class="form-group">
+					<div class="col-sm-2">
+						<input type="submit" value="Register" class="btn btn-lg btn-primary" />
+					</div>
+				
 				</div>
-			
-			</div>
-			
+			</center>
 		</form:form>
 	</div>

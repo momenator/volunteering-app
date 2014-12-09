@@ -27,27 +27,7 @@
 			<div style="width:30%;height:70px;margin-left:20%;margin-top:30px">
 				<h1><a href="/">volunteer.me</a></h1>
 			</div>
-			<security:authorize access="hasRole('ROLE_ADMIN')">
-				<a style="float:right;margin-top:-70px;margin-right:38%;" href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">Add VW</a>
-				<!-- Modal -->
-				<div class="modal fade" id="myModal" tabindex="-10" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-				      </div>
-				      <div class="modal-body">
-				        ...
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
-				      </div>
-				    </div>
-				  </div>
-				</div>
-			</security:authorize>
+
 			<security:authorize access="! isAuthenticated()">
 				<a style="float:right;margin-top:-70px;margin-right:20%;" href="/login.html" class="btn btn-primary btn-lg" role="button">Sign in / Register</a>
 			</security:authorize>

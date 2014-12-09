@@ -1,5 +1,7 @@
 package se.group6.vfa.controller;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,9 +37,10 @@ public class VWController {
 	}
 
 	@RequestMapping(value = "/vws", method = RequestMethod.POST)
-	public String registerUser(@ModelAttribute("vw") VW vw) {
+	public String adVW(@ModelAttribute("vw") VW vw) {
+		vw.setDate_posted(new Date());
 		vwService.save(vw);
-		return "vws";
+		return "redirect:/vws.html";
 	}
 
 }
