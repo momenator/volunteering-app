@@ -10,11 +10,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import se.group6.vfa.entity.User;
 import se.group6.vfa.entity.VW;
+import se.group6.vfa.service.UserService;
 import se.group6.vfa.service.VWService;
 
 @Controller
 public class VWController {
+
+	@Autowired
+	private UserService userService;
 
 	@Autowired
 	private VWService vwService;
@@ -22,6 +27,11 @@ public class VWController {
 	@ModelAttribute("vw")
 	public VW constructVW() {
 		return new VW();
+	}
+
+	@ModelAttribute("user")
+	public User constructUser() {
+		return new User();
 	}
 
 	@RequestMapping("/vws")
@@ -37,10 +47,16 @@ public class VWController {
 	}
 
 	@RequestMapping(value = "/vws", method = RequestMethod.POST)
-	public String adVW(@ModelAttribute("vw") VW vw) {
+	public String addVW(@ModelAttribute("vw") VW vw) {
 		vw.setDate_posted(new Date());
 		vwService.save(vw);
 		return "redirect:/vws.html";
 	}
 
+	/*
+	 * @RequestMapping(value = "/vws", method = RequestMethod.POST) public
+	 * String userRegisterVW(@ModelAttribute("vw") VW vw, Principal principal) {
+	 * userService.saveVWtoUser(vw, name); vw.setDate_posted(new Date());
+	 * vwService.save(vw); return "redirect:/vws.html"; }
+	 */
 }

@@ -26,6 +26,24 @@
 			      <form:password path="password" cssClass="form-control" />
 			    </div>
 			</div>
+			<div class="form-group">
+				<label for="email" class="col-sm-2 control-label">Age : </label>
+				<div class="col-sm-10">
+			      <form:input type="number" path="age" cssClass="form-control" />
+			    </div>
+			</div>
+			<div class="form-group">
+				<label for="sex" class="col-sm-2 control-label">Sex : </label>
+				<div class="col-sm-10">
+			      <form:input path="sex" cssClass="form-control" />
+			    </div>
+			</div>
+			<div class="form-group">
+				<label for="description" class="col-sm-2 control-label">About me : </label>
+				<div class="col-sm-10">
+			      <form:input path="description" cssClass="form-control" />
+			    </div>
+			</div>
 			<center>
 				<div class="form-group">
 					<div class="col-sm-2">

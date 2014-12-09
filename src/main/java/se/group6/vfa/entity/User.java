@@ -1,6 +1,5 @@
 package se.group6.vfa.entity;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -23,7 +22,7 @@ public class User {
 
 	private String description;
 
-	private Date DOB;
+	private int age;
 
 	private String sex;
 
@@ -53,12 +52,12 @@ public class User {
 		this.description = description;
 	}
 
-	public Date getDOB() {
-		return DOB;
+	public int getAge() {
+		return age;
 	}
 
-	public void setDOB(Date dOB) {
-		DOB = dOB;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	public String getSex() {

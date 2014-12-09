@@ -104,7 +104,9 @@ public class InitDBService {
 
 		user2.setVw_applied(vw_applied);
 		user2.setDescription("A Passionate Computer Science Student at UCL");
-		user2.setDOB(new Date(93, 03, 24));
+		user2.setSex("Male");
+		user2.setEmail("mail@test.uk");
+		user2.setAge(24);
 		userRepository.save(user2);
 
 	}

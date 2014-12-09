@@ -12,12 +12,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import se.group6.vfa.entity.User;
 import se.group6.vfa.service.UserService;
+import se.group6.vfa.service.VWService;
 
 @Controller
 public class UserController {
 
 	@Autowired
 	private UserService userService;
+
+	@Autowired
+	private VWService vwService;
 
 	@ModelAttribute("user")
 	public User constructUser() {

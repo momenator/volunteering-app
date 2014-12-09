@@ -6,9 +6,13 @@
     <div style="position:absolute;top:25%;left:20%;width:60%;z-index:-1;margin-bottom:50px">
     	<h2>${user.name}</h2>
     	<p>
-    		Description: ${user.description} 
+    		Age: ${user.age}
     		<br>
-    		DOB: ${user.DOB}
+    		Age: ${user.sex}
+    		<br>
+    		About Me: ${user.description} 
+    		<br>
+    		E-mail: ${user.email} 
     	</p>
     	<c:forEach items="${user.vw_applied}" var="vw">
     		<h3>${vw.name}</h3>
