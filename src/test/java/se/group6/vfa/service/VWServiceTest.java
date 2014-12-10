@@ -59,7 +59,7 @@ public class VWServiceTest {
 	public void testSaveVWExpectSuccessfullySavedVW() {
 		VW vwTest2 = new VW();
 		vwTest2.setId(19);
-		vwRepository.save(vwTest2);
+		vwService.save(vwTest2);
 		Assert.assertEquals(vwService.findOne(19), vwRepository.findOne(19));
 	}
 
