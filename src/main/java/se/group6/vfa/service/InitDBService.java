@@ -53,6 +53,7 @@ public class InitDBService {
 		User userAdmin = new User();
 		userAdmin.setEnabled(true);
 		userAdmin.setName("admin");
+		userAdmin.setEmail("admin@volunteer.me");
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		userAdmin.setPassword(encoder.encode("admin"));
 
@@ -63,7 +64,7 @@ public class InitDBService {
 		userRepository.save(userAdmin);
 
 		User user2 = new User();
-		user2.setName("Muhammad Rafdi");
+		user2.setName("Muhammad_Rafdi");
 
 		List<Role> roles2 = new ArrayList<Role>();
 		roles2.add(roleUser);
@@ -120,6 +121,8 @@ public class InitDBService {
 		user2.setDescription("A Passionate Computer Science Student at UCL");
 		user2.setSex("Male");
 		user2.setEmail("mail@test.uk");
+		BCryptPasswordEncoder encoder2 = new BCryptPasswordEncoder();
+		user2.setPassword(encoder2.encode("test"));
 		user2.setAge(24);
 		userRepository.save(user2);
 

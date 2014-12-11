@@ -22,7 +22,7 @@ public class User {
 
 	private String description;
 
-	private String interests;
+	private String interest;
 
 	private int age;
 
@@ -118,12 +118,12 @@ public class User {
 		this.vw_applied = vw_applied;
 	}
 
-	public String getInterests() {
-		return interests;
+	public String getInterest() {
+		return interest;
 	}
 
-	public void setInterests(String interests) {
-		this.interests = interests;
+	public void setInterest(String interests) {
+		this.interest = interests;
 	}
 
 }

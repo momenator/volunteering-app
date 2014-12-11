@@ -53,6 +53,8 @@
     		<br>
     		About Me: ${user.description} 
     		<br>
+    		Interests: ${user.interest}
+    		<br>
     		E-mail: ${user.email} 
     	</p>
     	<c:forEach items="${user.vw_applied}" var="vw">

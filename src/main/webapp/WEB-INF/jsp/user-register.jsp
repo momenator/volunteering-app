@@ -8,6 +8,7 @@
 			 
 		</c:if>
 		<form:form commandName="user" cssClass="form-horizontal">
+			<h1>User Registration</h1>
 			<div class="form-group">
 				<label for="name" class="col-sm-2 control-label">Name : </label>
 				<div class="col-sm-10">
@@ -42,6 +43,12 @@
 				<label for="description" class="col-sm-2 control-label">About me : </label>
 				<div class="col-sm-10">
 			      <form:input path="description" cssClass="form-control" />
+			    </div>
+			</div>
+			<div class="form-group">
+				<label for="interest" class="col-sm-2 control-label">Interests: </label>
+				<div class="col-sm-10">
+			      <form:input path="interest" cssClass="form-control" />
 			    </div>
 			</div>
 			<center>

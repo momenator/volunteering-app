@@ -8,6 +8,7 @@
 			 
 		</c:if>
 		<form:form commandName="organisation" cssClass="form-horizontal">
+			<h1>Organisation Registration</h1>
 			<div class="form-group">
 				<label for="organisationName" class="col-sm-2 control-label">Organisation Name : </label>
 				<div class="col-sm-10">
