@@ -11,7 +11,7 @@
 7. Garsing Chow
 
 
-## *g*IMPORTANT** SETUP - PLEASE READ THIS SECTION
+## **IMPORTANT** SETUP - PLEASE READ THIS SECTION
 
 ### Deploying the application
 1. Install eclipse for Java EE
