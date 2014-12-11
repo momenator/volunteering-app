@@ -1,9 +1,5 @@
 package se.group6.vfa.controller;
 
-import java.security.Principal;
-import java.util.Date;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -58,28 +54,6 @@ public class OrganisationController {
 	public String detail(Model model, @PathVariable int id) {
 		model.addAttribute("organisation", organisationService.findOne(id));
 		return "organisation-detail";
-	}
-
-	@RequestMapping("/organisation_profile")
-	public String account(Model model, Principal principal) {
-		String name = principal.getName();
-		model.addAttribute("organisation",
-				organisationService.findOneByName(name));
-		return "organisation-detail";
-	}
-
-	@RequestMapping(value = "/organisation_profile", method = RequestMethod.POST)
-	public String addVWtoUser(@ModelAttribute("vw") VW vw, Principal principal) {
-		vw.setDate_posted(new Date());
-		String name = principal.getName();
-		Organisation organisation = organisationService
-				.findOneByNameReturnOrganisation(name);
-		List<VW> vw_available = organisation.getVW_available();
-		vwService.save(vw);
-		vw_available.add(vw);
-		organisation.setVW_available(vw_available);
-		organisationService.save(organisation);
-		return "redirect:/organisation_profile.html";
 	}
 
 }
