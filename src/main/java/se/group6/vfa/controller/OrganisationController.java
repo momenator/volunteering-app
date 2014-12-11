@@ -57,7 +57,7 @@ public class OrganisationController {
 	@RequestMapping("/organisations/{id}")
 	public String detail(Model model, @PathVariable int id) {
 		model.addAttribute("organisation", organisationService.findOne(id));
-		return "vw-detail";
+		return "organisation-detail";
 	}
 
 	@RequestMapping("/organisation_profile")

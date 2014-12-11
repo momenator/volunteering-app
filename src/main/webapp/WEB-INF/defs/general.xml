@@ -22,6 +22,11 @@
      <put-attribute name="body" value="/WEB-INF/jsp/organisations.jsp" />     
    </definition>
    
+   <definition name="organisation-detail" extends="common">
+     <put-attribute name="title" value="Organisation detail" />
+     <put-attribute name="body" value="/WEB-INF/jsp/organisation-detail.jsp" />     
+   </definition>
+   
    <definition name="user-detail" extends="common">
      <put-attribute name="title" value="User detail" />
      <put-attribute name="body" value="/WEB-INF/jsp/user-detail.jsp" />     
@@ -42,6 +47,11 @@
      <put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp" />
    </definition>
    
+   <definition name="register-organisation" extends="common">
+     <put-attribute name="title" value="Organisation registration" />
+     <put-attribute name="body" value="/WEB-INF/jsp/register-organisation.jsp" />
+   </definition>
+      
    <definition name="login" extends="common">
      <put-attribute name="title" value="Login" />
      <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />

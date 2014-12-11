@@ -46,6 +46,10 @@ public class InitDBService {
 		roleAdmin.setName("ROLE_ADMIN");
 		roleRepository.save(roleAdmin);
 
+		Role roleOrganisation = new Role();
+		roleOrganisation.setName("ROLE_ORGANISATION");
+		roleRepository.save(roleOrganisation);
+
 		User userAdmin = new User();
 		userAdmin.setEnabled(true);
 		userAdmin.setName("admin");
@@ -67,10 +71,16 @@ public class InitDBService {
 
 		Organisation google = new Organisation();
 		google.setOrganisationName("Google");
+		google.setAddress("Belgrave House, 76 Buckingham Palace Road, London SW1W 9TQ, United Kingdom");
+		google.setDescription("Google's mission is to organize the world's information.");
+		google.setEmail("mail@google.com");
 		organisationRepository.save(google);
 
 		Organisation unicef = new Organisation();
-		google.setOrganisationName("Unicef");
+		unicef.setOrganisationName("Unicef");
+		unicef.setDescription("Unicef is the world's leading organisation for children");
+		unicef.setAddress("1 Grange Wold, Riby, Grimsby, Lincolnshire DN37 8NS, UK");
+		unicef.setEmail("mail@unicef.com");
 		organisationRepository.save(unicef);
 
 		VW vw1 = new VW();

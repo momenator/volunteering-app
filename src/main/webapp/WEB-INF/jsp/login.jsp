@@ -54,5 +54,7 @@
       <br>
       <p style="text-align:center">
       	Not yet registered? <a href="/register.html">register here</a>
+      	<br>
+      	Register as an Organisation <a href="/register-organisation.html">here</a>
       </p>
     

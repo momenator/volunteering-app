@@ -7,6 +7,7 @@
 	
     
     <div style="position:absolute;top:25%;left:20%;width:60%;z-index:-1;margin-bottom:50px">
+    	<h1>Your Search Results</h1>
     	<security:authorize access="hasRole('ROLE_ADMIN')">
 				<a style="float:right;margin-top:20px;margin-right:20%;" href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">Add VW</a>
 				<!-- Modal -->
