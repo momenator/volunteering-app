@@ -22,6 +22,8 @@ public class User {
 
 	private String description;
 
+	private String interests;
+
 	private int age;
 
 	private String sex;
@@ -114,6 +116,14 @@ public class User {
 
 	public void setVw_applied(List<VW> vw_applied) {
 		this.vw_applied = vw_applied;
+	}
+
+	public String getInterests() {
+		return interests;
+	}
+
+	public void setInterests(String interests) {
+		this.interests = interests;
 	}
 
 }

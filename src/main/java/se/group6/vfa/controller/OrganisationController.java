@@ -38,7 +38,7 @@ public class OrganisationController {
 
 	@RequestMapping("/register-organisation")
 	public String register() {
-		return "organisation-register";
+		return "register-organisation";
 	}
 
 	@RequestMapping(value = "/register-organisation", method = RequestMethod.POST)

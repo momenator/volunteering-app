@@ -17,6 +17,11 @@
      <put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />     
    </definition>
    
+   <definition name="organisations" extends="common">
+     <put-attribute name="title" value="Organisations" />
+     <put-attribute name="body" value="/WEB-INF/jsp/organisations.jsp" />     
+   </definition>
+   
    <definition name="user-detail" extends="common">
      <put-attribute name="title" value="User detail" />
      <put-attribute name="body" value="/WEB-INF/jsp/user-detail.jsp" />     
