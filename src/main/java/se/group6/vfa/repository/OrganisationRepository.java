@@ -7,4 +7,6 @@ import se.group6.vfa.entity.Organisation;
 public interface OrganisationRepository extends
 		JpaRepository<Organisation, Integer> {
 
+	Organisation findByOrganisationName(String name);
+
 }

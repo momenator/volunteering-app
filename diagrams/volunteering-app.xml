@@ -3,8 +3,8 @@
 		<entity-name>se.group6.vfa.entity.VW</entity-name>
 		<entity-width>120</entity-width>
 		<entity-height>226</entity-height>
-		<entity-X-Coordinate>467</entity-X-Coordinate>
-		<entity-Y-Coordinate>40</entity-Y-Coordinate>
+		<entity-X-Coordinate>277</entity-X-Coordinate>
+		<entity-Y-Coordinate>70</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -14,8 +14,8 @@
 		<entity-name>se.group6.vfa.entity.Organisation</entity-name>
 		<entity-width>120</entity-width>
 		<entity-height>206</entity-height>
-		<entity-X-Coordinate>730</entity-X-Coordinate>
-		<entity-Y-Coordinate>30</entity-Y-Coordinate>
+		<entity-X-Coordinate>466</entity-X-Coordinate>
+		<entity-Y-Coordinate>77</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -25,8 +25,8 @@
 		<entity-name>se.group6.vfa.entity.Role</entity-name>
 		<entity-width>120</entity-width>
 		<entity-height>146</entity-height>
-		<entity-X-Coordinate>230</entity-X-Coordinate>
-		<entity-Y-Coordinate>430</entity-Y-Coordinate>
+		<entity-X-Coordinate>277</entity-X-Coordinate>
+		<entity-Y-Coordinate>330</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -35,20 +35,9 @@
 	<entity>
 		<entity-name>se.group6.vfa.entity.User</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>266</entity-height>
+		<entity-height>286</entity-height>
 		<entity-X-Coordinate>70</entity-X-Coordinate>
 		<entity-Y-Coordinate>70</entity-Y-Coordinate>
-		<primary-collapsed>false</primary-collapsed>
-		<relation-collapsed>false</relation-collapsed>
-		<basic-collapsed>false</basic-collapsed>
-	</entity>
-
-	<entity>
-		<entity-name>se.group6.vfa.entity.VW_Application</entity-name>
-		<entity-width>120</entity-width>
-		<entity-height>166</entity-height>
-		<entity-X-Coordinate>550</entity-X-Coordinate>
-		<entity-Y-Coordinate>360</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>

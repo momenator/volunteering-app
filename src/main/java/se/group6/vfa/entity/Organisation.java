@@ -5,15 +5,19 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
 public class Organisation {
 	@Id
 	@GeneratedValue
-	private Integer organisation_id;
+	private Integer organisationId;
 
-	private String organisation_name;
+	private String organisationName;
+
+	private String password;
 
 	private String email;
 
@@ -21,23 +25,29 @@ public class Organisation {
 
 	private String address;
 
+	@ManyToOne
+	@JoinColumn(name = "name")
+	private Role role;
+
+	private boolean enabled;
+
 	@OneToMany(mappedBy = "organisation")
 	private List<VW> VW_available;
 
-	public Integer getOrganisation_id() {
-		return organisation_id;
+	public Integer getOrganisationId() {
+		return organisationId;
 	}
 
-	public void setOrganisation_id(Integer organisation_id) {
-		this.organisation_id = organisation_id;
+	public void setOrganisationId(Integer organisationId) {
+		this.organisationId = organisationId;
 	}
 
-	public String getOrganisation_name() {
-		return organisation_name;
+	public String getOrganisationName() {
+		return organisationName;
 	}
 
-	public void setOrganisation_name(String organisation_name) {
-		this.organisation_name = organisation_name;
+	public void setOrganisationName(String organisationName) {
+		this.organisationName = organisationName;
 	}
 
 	public String getEmail() {
@@ -70,6 +80,30 @@ public class Organisation {
 
 	public void setVW_available(List<VW> vW_available) {
 		VW_available = vW_available;
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

@@ -66,11 +66,11 @@ public class InitDBService {
 		user2.setRoles(roles2);
 
 		Organisation google = new Organisation();
-		google.setOrganisation_name("Google");
+		google.setOrganisationName("Google");
 		organisationRepository.save(google);
 
 		Organisation unicef = new Organisation();
-		google.setOrganisation_name("Unicef");
+		google.setOrganisationName("Unicef");
 		organisationRepository.save(unicef);
 
 		VW vw1 = new VW();

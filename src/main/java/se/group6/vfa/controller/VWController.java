@@ -53,10 +53,4 @@ public class VWController {
 		return "redirect:/vws.html";
 	}
 
-	/*
-	 * @RequestMapping(value = "/vws", method = RequestMethod.POST) public
-	 * String userRegisterVW(@ModelAttribute("vw") VW vw, Principal principal) {
-	 * userService.saveVWtoUser(vw, name); vw.setDate_posted(new Date());
-	 * vwService.save(vw); return "redirect:/vws.html"; }
-	 */
 }
