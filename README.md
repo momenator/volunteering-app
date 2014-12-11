@@ -1,6 +1,6 @@
 #COMP 2009 SOFTWARE ENGINEERING AND HCI - VOLUNTEER.ME APP
 
-##MEMBERS:
+###MEMBERS:
 
 1. Muhammad Rafdi
 2. Archit Sajdeva
@@ -11,7 +11,7 @@
 7. Garsing Chow
 
 
-## *IMPORTANT* SETUP - PLEASE READ THIS SECTION
+## **IMPORTANT** SETUP - PLEASE READ THIS SECTION
 
 ### Deploying the application
 1. Install eclipse for Java EE
